@@ -16,3 +16,5 @@ def get_days_from_today(date:str) -> int: #  date in format 'РРРР-ММ-ДД'
     except ValueError:
         return f"Time data {date} does not match format 'YYYY.mm.dd'"
 
+
+print(get_days_from_today('2024.12.25'))
