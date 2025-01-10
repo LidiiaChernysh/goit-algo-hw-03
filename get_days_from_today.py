@@ -1,7 +1,20 @@
 from datetime import datetime, timedelta, date
 
 
-def get_days_from_today(date:str) -> int: #  date in format 'РРРР-ММ-ДД'
+def get_days_from_today(date:str) -> int: 
+
+    """
+    Calculates the number of days between a given date and the current date.
+
+    Parameters:
+        date (str): date in 'YYYY-MM-DD' format
+
+    Returns:
+        int: number of days from a given date to the current one
+    
+    Raises:
+        ValueError: if data does not match format 'YYYY-mm-dd'
+    """
     today = datetime.today()
    
     try:
