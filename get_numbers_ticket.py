@@ -18,7 +18,7 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
         list: a list of randomly selected, sorted numbers or an empty list
         empty list: if the parameters do not meet the specified constraints
     """
-    
+
     if ((1 <= min) 
         and (max <= 1000) 
         and (min <= quantity <= max - min)):
@@ -30,3 +30,4 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
 
     
 print(get_numbers_ticket(10,1000,990))
+
